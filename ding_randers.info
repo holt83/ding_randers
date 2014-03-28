@@ -1,0 +1,25 @@
+name = Ding Randers
+description = Provides various additions needed by the Randers version of DDB CMS.
+core = 7.x
+package = Ding!
+version = 7.x-1.0
+project = ding_randers
+
+files[] = ding_randers.module
+
+dependencies[] = features
+dependencies[] = field_collection
+dependencies[] = list
+dependencies[] = options
+dependencies[] = text
+
+features[features_api][] = api:1
+features[field_base][] = field_collection_fakta_box
+features[field_base][] = field_ding_fakta_box_content
+features[field_base][] = field_ding_fakta_box_show
+features[field_base][] = field_ding_fakta_box_title
+features[field_instance][] = field_collection_item-field_collection_fakta_box-field_ding_fakta_box_content
+features[field_instance][] = field_collection_item-field_collection_fakta_box-field_ding_fakta_box_show
+features[field_instance][] = field_collection_item-field_collection_fakta_box-field_ding_fakta_box_title
+features[field_instance][] = node-ding_event-field_collection_fakta_box
+
